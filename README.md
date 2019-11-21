@@ -1,1 +1,3 @@
-# bde-website-back
+# Strapi application
+
+A quick description of your strapi application
