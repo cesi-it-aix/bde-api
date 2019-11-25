@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "events",
+  "info": {
+    "name": "event",
+    "description": "model of event page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "minLength": 1,
+      "required": true,
+      "maxLength": 250
+    },
+    "content": {
+      "type": "richtext",
+      "minLength": 1,
+      "required": true
+    },
+    "dateStart": {
+      "type": "date",
+      "required": true
+    },
+    "dateEnd": {
+      "type": "date",
+      "required": true
+    },
+    "poster": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
