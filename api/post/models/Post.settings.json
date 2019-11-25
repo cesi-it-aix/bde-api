@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "minLength": 1,
+      "required": true,
+      "type": "string"
+    },
+    "summary": {
+      "minLength": 1,
+      "required": true,
+      "type": "text"
+    },
+    "content": {
+      "minLength": 1,
+      "required": true,
+      "type": "richtext"
+    },
+    "poster": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "createAt": {
+      "required": true,
+      "type": "date"
+    }
+  }
+}
