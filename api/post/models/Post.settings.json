@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -19,7 +22,8 @@
     "summary": {
       "minLength": 1,
       "required": true,
-      "type": "text"
+      "type": "text",
+      "maxLength": 250
     },
     "content": {
       "minLength": 1,
@@ -29,8 +33,7 @@
     "poster": {
       "model": "file",
       "via": "related",
-      "plugin": "upload",
-      "required": true
+      "plugin": "upload"
     },
     "createAt": {
       "required": true,
