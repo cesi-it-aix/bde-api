@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "infos",
+  "info": {
+    "name": "content",
+    "description": "Toute donnée qui ne change pas pendant un long moment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "key": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "Value": {
+      "required": true,
+      "type": "richtext"
+    }
+  }
+}
