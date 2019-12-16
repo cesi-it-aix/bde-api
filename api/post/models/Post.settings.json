@@ -34,10 +34,6 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
-    },
-    "createAt": {
-      "required": true,
-      "type": "date"
     }
   }
 }
