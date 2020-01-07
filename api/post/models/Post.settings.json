@@ -8,8 +8,8 @@
   "options": {
     "increments": true,
     "timestamps": [
-      "created_at",
-      "updated_at"
+      "createdAt",
+      "updatedAt"
     ],
     "comment": ""
   },
